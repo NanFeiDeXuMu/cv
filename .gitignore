@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.ruff_cache/
+.mypy_cache/
+.gradio/
+*.log
+
+tmp/
+outputs/*
+!outputs/.gitkeep
+lab_week01/output/
+assets/videos/*.mp4
+assets/videos/*.avi
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Local course references and generated presentation artifacts.
+/week-1.pdf
+/lab_week_01_slide.pdf

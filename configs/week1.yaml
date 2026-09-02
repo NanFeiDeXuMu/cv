@@ -1,0 +1,23 @@
+video:
+  source: assets/videos/week1_line_demo.mp4
+  camera_index: 0
+  max_frames: 0
+
+roi:
+  x: 0.34375
+  y: 0.27778
+  width: 0.31250
+  height: 0.50000
+
+analysis:
+  background_frames: 10
+  pixel_difference_threshold: 28
+  occupancy_ratio_threshold: 0.08
+  enter_confirm_frames: 3
+  exit_confirm_frames: 3
+  sample_every_n_frames: 30
+
+output:
+  directory: outputs/week1
+  save_annotated_video: true
+  save_samples: true
