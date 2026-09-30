@@ -1,0 +1,216 @@
+{
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "numpy": "2.5.2",
+  "matplotlib": "3.11.2",
+  "cases": [
+    {
+      "case": 1,
+      "input_shape": [
+        768,
+        1024,
+        3
+      ],
+      "output_shape": [
+        572,
+        578,
+        3
+      ],
+      "corners": [
+        [
+          366,
+          96
+        ],
+        [
+          751,
+          116
+        ],
+        [
+          754,
+          688
+        ],
+        [
+          180,
+          613
+        ]
+      ],
+      "contour_area": 265111.0,
+      "contour_area_ratio": 0.33710606892903644,
+      "canny_pixels": 15575,
+      "closed_pixels": 39956
+    },
+    {
+      "case": 2,
+      "input_shape": [
+        1500,
+        1500,
+        3
+      ],
+      "output_shape": [
+        1247,
+        772,
+        3
+      ],
+      "corners": [
+        [
+          349,
+          124
+        ],
+        [
+          1110,
+          118
+        ],
+        [
+          1215,
+          1253
+        ],
+        [
+          451,
+          1367
+        ]
+      ],
+      "contour_area": 907960.5,
+      "contour_area_ratio": 0.403538,
+      "canny_pixels": 53806,
+      "closed_pixels": 107744
+    },
+    {
+      "case": 3,
+      "input_shape": [
+        1200,
+        899,
+        3
+      ],
+      "output_shape": [
+        989,
+        698,
+        3
+      ],
+      "corners": [
+        [
+          133,
+          94
+        ],
+        [
+          693,
+          120
+        ],
+        [
+          740,
+          1074
+        ],
+        [
+          42,
+          1079
+        ]
+      ],
+      "contour_area": 620886.5,
+      "contour_area_ratio": 0.575534390063033,
+      "canny_pixels": 15070,
+      "closed_pixels": 21913
+    }
+  ],
+  "experiments": [
+    {
+      "id": "A",
+      "gaussian_kernel": 5,
+      "sigma": 1.4,
+      "closing_kernel": 1,
+      "cases": [
+        {
+          "found": false,
+          "error": "Document contour not found; adjust parameters or check image quality"
+        },
+        {
+          "found": false,
+          "error": "Document contour not found; adjust parameters or check image quality"
+        },
+        {
+          "found": true,
+          "area_ratio": 0.575729977753059
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "gaussian_kernel": 9,
+      "sigma": 2.0,
+      "closing_kernel": 1,
+      "cases": [
+        {
+          "found": true,
+          "area_ratio": 0.3371009826660156
+        },
+        {
+          "found": false,
+          "error": "Document contour not found; adjust parameters or check image quality"
+        },
+        {
+          "found": true,
+          "area_ratio": 0.5755047274749722
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "gaussian_kernel": 9,
+      "sigma": 2.0,
+      "closing_kernel": 3,
+      "cases": [
+        {
+          "found": true,
+          "area_ratio": 0.33710606892903644
+        },
+        {
+          "found": true,
+          "area_ratio": 0.39464844444444447
+        },
+        {
+          "found": true,
+          "area_ratio": 0.5755139970337412
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "gaussian_kernel": 9,
+      "sigma": 2.0,
+      "closing_kernel": 5,
+      "cases": [
+        {
+          "found": true,
+          "area_ratio": 0.33710606892903644
+        },
+        {
+          "found": true,
+          "area_ratio": 0.403538
+        },
+        {
+          "found": true,
+          "area_ratio": 0.575534390063033
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "gaussian_kernel": 15,
+      "sigma": 3.0,
+      "closing_kernel": 5,
+      "cases": [
+        {
+          "found": true,
+          "area_ratio": 0.3370889027913411
+        },
+        {
+          "found": false,
+          "error": "Document contour not found; adjust parameters or check image quality"
+        },
+        {
+          "found": true,
+          "area_ratio": 0.5715512606599926
+        }
+      ]
+    }
+  ],
+  "exit_code": 0
+}

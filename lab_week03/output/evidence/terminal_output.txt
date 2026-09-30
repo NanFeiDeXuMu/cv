@@ -1,0 +1,25 @@
+PS lab_week03> python student_document_scanner.py
+Document Scanner Test
+========================================
+Gaussian: 9x9, sigma=2.0 | Canny: 50/150
+Closing: 5x5 | Min area: 5% | Epsilon: 2%
+
+Test Case 1: asset/case1.png
+[OK] Processing successful, result saved to: output/result_1.png
+  Output dimensions: (572, 578, 3)
+  Corners (TL/TR/BR/BL): [[366, 96], [751, 116], [754, 688], [180, 613]]
+
+Test Case 2: asset/case2.png
+[OK] Processing successful, result saved to: output/result_2.png
+  Output dimensions: (1247, 772, 3)
+  Corners (TL/TR/BR/BL): [[349, 124], [1110, 118], [1215, 1253], [451, 1367]]
+
+Test Case 3: asset/case3.png
+[OK] Processing successful, result saved to: output/result_3.png
+  Output dimensions: (989, 698, 3)
+  Corners (TL/TR/BR/BL): [[133, 94], [693, 120], [740, 1074], [42, 1079]]
+
+========================================
+Completed: 3/3 test cases passed.
+
+Process exit code: 0
